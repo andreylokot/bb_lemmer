@@ -257,4 +257,28 @@ define VerbTenses [
 |   ImperativoNegativo
 ];
 
-define VerbToForm [ [Verbs .o. VerbToConjugation] "+V":0 ?* ] .o. [ ?* VerbTenses ];
+define ParticipioIrregular [ ?* [
+    [{abr} "+ir"] : {abiert} |
+    [{cubr} "+ir"] : {cubiert} |
+    [{dec} "+ir"] : {dich} |
+    [{escrib} "+ir"] : {escrit} |
+    [{hac} "+er"] : {hech} |
+    [{mor} "+ir"] : {muert} |
+    [{pon} "+er"] : {puest} |
+    [{resolv} "+er"] : {resuelt} |
+    [{v} "+er"] : {vist} |
+    [{volv} "+r"] : {vuelt}
+] ? ? ];
+
+define ParticipioRegular [ ?* [ "+ar" : {ad} | ["+er" | "+ir"] : {id} ] ? ? ];
+
+define ParticipioAgreement [ ?* [
+    ["+M" "+S"] : {o} |
+    ["+F" "+S"] : {a} |
+    ["+M" "+P"] : {os} |
+    ["+F" "+P"] : {as}
+]];
+
+define Participio [ ?* ? "+Participio":0 ? ? ] .o. [ ParticipioIrregular .P. ParticipioRegular ] .o. ParticipioAgreement;
+
+define VerbToForm [ [Verbs .o. VerbToConjugation] "+V":0 ?* ] .o. [ [ ?* VerbTenses ] | Participio ];
