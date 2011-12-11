@@ -1,2 +1,2 @@
 # stub
-define AdjectiveToForm [ Adjectives "+V":0 ];
+define AdjectiveToForm [ Adjectives "+A":0 ];

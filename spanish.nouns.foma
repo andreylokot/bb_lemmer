@@ -1,2 +1,2 @@
 # stub
-define NounToForm [ Nouns "+V":0 ];
+define NounToForm [ Nouns "+N":0 ];
