@@ -6,3 +6,7 @@ source spanish.verbs.foma
 #source spanish.nouns.foma
 #source spanish.adjectives.foma
 
+define Main [ VerbToForm ];
+
+regex Main;
+
