@@ -1,8 +1,4 @@
-define VerbToConjugation [
-    [ {ar} -> "+ar" || _ .#. ] |
-    [ {er} -> "+er" || _ .#. ] |
-    [ {ir} -> "+ir" || _ .#. ]
-];
+define VerbToConjugation ?* [ {ar}:"+ar" | {er}:"+er" | {ir}:"+ir" ];
 
 define IndicativoPresente [ ? "+Indicativo":0 "+Presente":0 ? ? ] .o. [
     [ "+ar":0 [
