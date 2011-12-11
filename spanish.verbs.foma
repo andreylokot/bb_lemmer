@@ -58,9 +58,65 @@ define IndicativoPreteritoImperfecto [ ? "+Indicativo":0 "+PreteritoImperfecto":
     ]]
 ];
 
+define IndicativoPreteritoIndefinido [ ? "+Indicativo":0 "+PreteritoIndefinido":0 ? ? ] .o. [
+    [ "+ar":0 [
+        ["+1" "+S"] : {é} |
+        ["+2" "+S"] : {aste} |
+        ["+3" "+S"] : {ó} |
+        ["+1" "+P"] : {amos} |
+        ["+2" "+P"] : {asteis} |
+        ["+3" "+P"] : {aron}
+    ]] |
+    [ "+er":0 [
+        ["+1" "+S"] : {í} |
+        ["+2" "+S"] : {iste} |
+        ["+3" "+S"] : {ió} |
+        ["+1" "+P"] : {imos} |
+        ["+2" "+P"] : {isteis} |
+        ["+3" "+P"] : {ieron}
+    ]] |
+    [ "+ir":0 [
+        ["+1" "+S"] : {í} |
+        ["+2" "+S"] : {iste} |
+        ["+3" "+S"] : {ió} |
+        ["+1" "+P"] : {imos} |
+        ["+2" "+P"] : {isteis} |
+        ["+3" "+P"] : {ieron}
+    ]]
+];
+
+define IndicativoFuturoImperfecto [ ? "+Indicativo":0 "+FuturoImperfecto":0 ? ? ] .o. [
+    [ "+ar":0 [
+        ["+1" "+S"] : {aré} |
+        ["+2" "+S"] : {arás} |
+        ["+3" "+S"] : {ará} |
+        ["+1" "+P"] : {aremos} |
+        ["+2" "+P"] : {aréis} |
+        ["+3" "+P"] : {arán}
+    ]] |
+    [ "+er":0 [
+        ["+1" "+S"] : {eré} |
+        ["+2" "+S"] : {erás} |
+        ["+3" "+S"] : {erá} |
+        ["+1" "+P"] : {eremos} |
+        ["+2" "+P"] : {eréis} |
+        ["+3" "+P"] : {erán}
+    ]] |
+    [ "+ir":0 [
+        ["+1" "+S"] : {iré} |
+        ["+2" "+S"] : {irás} |
+        ["+3" "+S"] : {irá} |
+        ["+1" "+P"] : {iremos} |
+        ["+2" "+P"] : {iréis} |
+        ["+3" "+P"] : {irán}
+    ]]
+];
+
 define VerbTenses [
     IndicativoPresente
 |   IndicativoPreteritoImperfecto
+|   IndicativoPreteritoIndefinido
+|   IndicativoFuturoImperfecto
 ];
 
 define VerbToForm [ [Verbs .o. VerbToConjugation] "+V":0 ?* ] .o. [ ?* VerbTenses ];
