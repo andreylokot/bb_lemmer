@@ -243,6 +243,8 @@ define ImperativoNegativo [ ? "+Imperativo":0 "+Negativo":0 ? ? ] .o. [
     ]]
 ];
 
+define Gerundio [ ? "+Gerundio":0 ] .o. [ "+ar" : {ando} | ["+er" | "+ir"] : {iendo} ];
+
 define VerbTenses [
     IndicativoPresente
 |   IndicativoPreteritoImperfecto
@@ -255,6 +257,7 @@ define VerbTenses [
 |   PotencialImperfecto
 |   ImperativoAfirmativo
 |   ImperativoNegativo
+|   Gerundio
 ];
 
 define ParticipioIrregular [ ?* [
@@ -281,4 +284,5 @@ define ParticipioAgreement [ ?* [
 
 define Participio [ ?* ? "+Participio":0 ? ? ] .o. [ ParticipioIrregular .P. ParticipioRegular ] .o. ParticipioAgreement;
 
-define VerbToForm [ [Verbs .o. VerbToConjugation] "+V":0 ?* ] .o. [ [ ?* VerbTenses ] | Participio ];
+define VerbToForm [Verbs "+V":0 "+Infinitive":0] | [
+    [ [Verbs .o. VerbToConjugation] "+V":0 ?* ] .o. [ [ ?* VerbTenses ] | Participio ]];
