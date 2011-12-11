@@ -36,15 +36,7 @@ define IndicativoPreteritoImperfecto [ ? "+Indicativo":0 "+PreteritoImperfecto":
         ["+2" "+P"] : {abais} |
         ["+3" "+P"] : {aban}
     ]] |
-    [ "+er":0 [
-        ["+1" "+S"] : {íа} |
-        ["+2" "+S"] : {ías} |
-        ["+3" "+S"] : {ía} |
-        ["+1" "+P"] : {íamos} |
-        ["+2" "+P"] : {íais} |
-        ["+3" "+P"] : {ían}
-    ]] |
-    [ "+ir":0 [
+    [ ["+er" | "+ir"]:0 [
         ["+1" "+S"] : {ía} |
         ["+2" "+S"] : {ías} |
         ["+3" "+S"] : {ía} |
@@ -63,15 +55,7 @@ define IndicativoPreteritoIndefinido [ ? "+Indicativo":0 "+PreteritoIndefinido":
         ["+2" "+P"] : {asteis} |
         ["+3" "+P"] : {aron}
     ]] |
-    [ "+er":0 [
-        ["+1" "+S"] : {í} |
-        ["+2" "+S"] : {iste} |
-        ["+3" "+S"] : {ió} |
-        ["+1" "+P"] : {imos} |
-        ["+2" "+P"] : {isteis} |
-        ["+3" "+P"] : {ieron}
-    ]] |
-    [ "+ir":0 [
+    [ ["+er" | "+ir"]:0 [
         ["+1" "+S"] : {í} |
         ["+2" "+S"] : {iste} |
         ["+3" "+S"] : {ió} |
