@@ -31,8 +31,36 @@ define IndicativoPresente [ ? "+Indicativo":0 "+Presente":0 ? ? ] .o. [
     ]]
 ];
 
+define IndicativoPreteritoImperfecto [ ? "+Indicativo":0 "+PreteritoImperfecto":0 ? ? ] .o. [
+    [ "+ar":0 [
+        ["+1" "+S"] : {aba} |
+        ["+2" "+S"] : {abas} |
+        ["+3" "+S"] : {aba} |
+        ["+1" "+P"] : {ábamos} |
+        ["+2" "+P"] : {abais} |
+        ["+3" "+P"] : {aban}
+    ]] |
+    [ "+er":0 [
+        ["+1" "+S"] : {íа} |
+        ["+2" "+S"] : {ías} |
+        ["+3" "+S"] : {ía} |
+        ["+1" "+P"] : {íamos} |
+        ["+2" "+P"] : {íais} |
+        ["+3" "+P"] : {ían}
+    ]] |
+    [ "+ir":0 [
+        ["+1" "+S"] : {ía} |
+        ["+2" "+S"] : {ías} |
+        ["+3" "+S"] : {ía} |
+        ["+1" "+P"] : {íamos} |
+        ["+2" "+P"] : {íais} |
+        ["+3" "+P"] : {ían}
+    ]]
+];
+
 define VerbTenses [
     IndicativoPresente
+|   IndicativoPreteritoImperfecto
 ];
 
 define VerbToForm [ [Verbs .o. VerbToConjugation] "+V":0 ?* ] .o. [ ?* VerbTenses ];
