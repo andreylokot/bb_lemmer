@@ -18,6 +18,10 @@ def main():
         os.unlink('results.debug.txt')
     except OSError:
         pass
+    try:
+        os.unlink('results.send.txt')
+    except OSError:
+        pass
 
     words = []
     with open(sys.argv[1]) as input:
@@ -43,6 +47,10 @@ def main():
             for word, results in izip(words, word_results):
                 debug_output.write(word + '\t' + '\t'.join(results) + '\n')
                 output.write(word + '\t' + '\t'.join(set(clear_debug(result) for result in results)) + '\n')
+
+    with open('result.txt') as output:
+        with open('result.send.txt', 'w') as send_output:
+            send_output.write(output.read().decode('utf-8').encode('latin-1'))
 
 if __name__ == '__main__':
     main()
