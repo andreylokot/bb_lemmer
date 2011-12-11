@@ -1,0 +1,38 @@
+define VerbToConjugation [
+    [ {ar} -> "+ar" || _ .#. ] |
+    [ {er} -> "+er" || _ .#. ] |
+    [ {ir} -> "+ir" || _ .#. ]
+];
+
+define IndicativoPresente [ ? "+Indicativo":0 "+Presente":0 ? ? ] .o. [
+    [ "+ar":0 [
+        ["+1" "+S"] : {o} |
+        ["+2" "+S"] : {as} |
+        ["+3" "+S"] : {a} |
+        ["+1" "+P"] : {amos} |
+        ["+2" "+P"] : {áis} |
+        ["+3" "+P"] : {an}
+    ]] |
+    [ "+er":0 [
+        ["+1" "+S"] : {o} |
+        ["+2" "+S"] : {es} |
+        ["+3" "+S"] : {e} |
+        ["+1" "+P"] : {emos} |
+        ["+2" "+P"] : {éis} |
+        ["+3" "+P"] : {en}
+    ]] |
+    [ "+ir":0 [
+        ["+1" "+S"] : {o} |
+        ["+2" "+S"] : {es} |
+        ["+3" "+S"] : {e} |
+        ["+1" "+P"] : {imos} |
+        ["+2" "+P"] : {ís} |
+        ["+3" "+P"] : {en}
+    ]]
+];
+
+define VerbTenses [
+    IndicativoPresente
+];
+
+define VerbToForm [ [Verbs .o. VerbToConjugation] "+V":0 ?* ] .o. [ ?* VerbTenses ];
