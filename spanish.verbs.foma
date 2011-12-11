@@ -92,11 +92,91 @@ define IndicativoFuturoImperfecto [ ? "+Indicativo":0 "+FuturoImperfecto":0 ? ? 
     ]]
 ];
 
+define SubjuntivoPresente [ ? "+Subjuntivo":0 "+Presente":0 ? ? ] .o. [
+    [ "+ar":0 [
+        ["+1" "+S"] : {e} |
+        ["+2" "+S"] : {es} |
+        ["+3" "+S"] : {e} |
+        ["+1" "+P"] : {emos} |
+        ["+2" "+P"] : {éis} |
+        ["+3" "+P"] : {en}
+    ]] |
+    [ ["+er" | "+ir"]:0 [
+        ["+1" "+S"] : {a} |
+        ["+2" "+S"] : {as} |
+        ["+3" "+S"] : {a} |
+        ["+1" "+P"] : {amos} |
+        ["+2" "+P"] : {áis} |
+        ["+3" "+P"] : {an}
+    ]]
+];
+
+define SubjuntivoPreteritoImperfecto1 [ ? "+Subjuntivo":0 "+PreteritoImperfecto1":0 ? ? ] .o. [
+    [ "+ar":0 [
+        ["+1" "+S"] : {ara} |
+        ["+2" "+S"] : {aras} |
+        ["+3" "+S"] : {ara} |
+        ["+1" "+P"] : {áramos} |
+        ["+2" "+P"] : {arais} |
+        ["+3" "+P"] : {aran}
+    ]] |
+    [ ["+er" | "+ir"]:0 [
+        ["+1" "+S"] : {iera} |
+        ["+2" "+S"] : {ieras} |
+        ["+3" "+S"] : {iera} |
+        ["+1" "+P"] : {iéramos} |
+        ["+2" "+P"] : {ierais} |
+        ["+3" "+P"] : {ieran}
+    ]]
+];
+
+define SubjuntivoPreteritoImperfecto2 [ ? "+Subjuntivo":0 "+PreteritoImperfecto2":0 ? ? ] .o. [
+    [ "+ar":0 [
+        ["+1" "+S"] : {ase} |
+        ["+2" "+S"] : {ases} |
+        ["+3" "+S"] : {ase} |
+        ["+1" "+P"] : {ásemos} |
+        ["+2" "+P"] : {aseis} |
+        ["+3" "+P"] : {asen}
+    ]] |
+    [ ["+er" | "+ir"]:0 [
+        ["+1" "+S"] : {iese} |
+        ["+2" "+S"] : {ieses} |
+        ["+3" "+S"] : {iese} |
+        ["+1" "+P"] : {iésemos} |
+        ["+2" "+P"] : {ieseis} |
+        ["+3" "+P"] : {iesen}
+    ]]
+];
+
+define SubjuntivoFuturoImperfecto [ ? "+Subjuntivo":0 "+FuturoImperfecto":0 ? ? ] .o. [
+    [ "+ar":0 [
+        ["+1" "+S"] : {are} |
+        ["+2" "+S"] : {ares} |
+        ["+3" "+S"] : {are} |
+        ["+1" "+P"] : {áremos} |
+        ["+2" "+P"] : {areis} |
+        ["+3" "+P"] : {aren}
+    ]] |
+    [ ["+er" | "+ir"]:0 [
+        ["+1" "+S"] : {iere} |
+        ["+2" "+S"] : {ieres} |
+        ["+3" "+S"] : {iere} |
+        ["+1" "+P"] : {iéremos} |
+        ["+2" "+P"] : {iereis} |
+        ["+3" "+P"] : {ieren}
+    ]]
+];
+
 define VerbTenses [
     IndicativoPresente
 |   IndicativoPreteritoImperfecto
 |   IndicativoPreteritoIndefinido
 |   IndicativoFuturoImperfecto
+|   SubjuntivoPresente
+|   SubjuntivoPreteritoImperfecto1
+|   SubjuntivoPreteritoImperfecto2
+|   SubjuntivoFuturoImperfecto
 ];
 
 define VerbToForm [ [Verbs .o. VerbToConjugation] "+V":0 ?* ] .o. [ ?* VerbTenses ];
