@@ -168,6 +168,81 @@ define SubjuntivoFuturoImperfecto [ ? "+Subjuntivo":0 "+FuturoImperfecto":0 ? ? 
     ]]
 ];
 
+define PotencialImperfecto [ ? "+Potencial":0 "+Imperfecto":0 ? ? ] .o. [
+    [ "+ar":0 [
+        ["+1" "+S"] : {aría} |
+        ["+2" "+S"] : {arías} |
+        ["+3" "+S"] : {aría} |
+        ["+1" "+P"] : {aríamos} |
+        ["+2" "+P"] : {aríais} |
+        ["+3" "+P"] : {arían}
+    ]] |
+    [ "+er":0 [
+        ["+1" "+S"] : {ería} |
+        ["+2" "+S"] : {erías} |
+        ["+3" "+S"] : {ería} |
+        ["+1" "+P"] : {eríamos} |
+        ["+2" "+P"] : {eríais} |
+        ["+3" "+P"] : {erían}
+    ]] |
+    [ "+ir":0 [
+        ["+1" "+S"] : {iría} |
+        ["+2" "+S"] : {irías} |
+        ["+3" "+S"] : {iría} |
+        ["+1" "+P"] : {iríamos} |
+        ["+2" "+P"] : {iríais} |
+        ["+3" "+P"] : {irían}
+    ]]
+];
+
+define ImperativoAfirmativo [ ? "+Imperativo":0 "+Afirmativo":0 ? ? ] .o. [
+    [ "+ar":0 [
+        ["+2" "+S"] : {a} |
+        ["+3" "+S"] : {e} |
+        ["+1" "+P"] : {emos} |
+        ["+2" "+P"] : {ad} |
+        ["+3" "+P"] : {en}
+    ]] |
+    [ "+er":0 [
+        ["+2" "+S"] : {e} |
+        ["+3" "+S"] : {a} |
+        ["+1" "+P"] : {amos} |
+        ["+2" "+P"] : {ed} |
+        ["+3" "+P"] : {an}
+    ]] |
+    [ "+ir":0 [
+        ["+2" "+S"] : {e} |
+        ["+3" "+S"] : {a} |
+        ["+1" "+P"] : {amos} |
+        ["+2" "+P"] : {id} |
+        ["+3" "+P"] : {an}
+    ]]
+];
+
+define ImperativoNegativo [ ? "+Imperativo":0 "+Negativo":0 ? ? ] .o. [
+    [ "+ar":0 [
+        ["+2" "+S"] : {es} |
+        ["+3" "+S"] : {e} |
+        ["+1" "+P"] : {emos} |
+        ["+2" "+P"] : {éis} |
+        ["+3" "+P"] : {en}
+    ]] |
+    [ "+er":0 [
+        ["+2" "+S"] : {as} |
+        ["+3" "+S"] : {a} |
+        ["+1" "+P"] : {amos} |
+        ["+2" "+P"] : {áis} |
+        ["+3" "+P"] : {an}
+    ]] |
+    [ "+ir":0 [
+        ["+2" "+S"] : {as} |
+        ["+3" "+S"] : {a} |
+        ["+1" "+P"] : {amos} |
+        ["+2" "+P"] : {áis} |
+        ["+3" "+P"] : {an}
+    ]]
+];
+
 define VerbTenses [
     IndicativoPresente
 |   IndicativoPreteritoImperfecto
@@ -177,6 +252,9 @@ define VerbTenses [
 |   SubjuntivoPreteritoImperfecto1
 |   SubjuntivoPreteritoImperfecto2
 |   SubjuntivoFuturoImperfecto
+|   PotencialImperfecto
+|   ImperativoAfirmativo
+|   ImperativoNegativo
 ];
 
 define VerbToForm [ [Verbs .o. VerbToConjugation] "+V":0 ?* ] .o. [ ?* VerbTenses ];
