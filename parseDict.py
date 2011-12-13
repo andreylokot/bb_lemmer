@@ -1,15 +1,18 @@
+#!/usr/bin/python
+
 import codecs
-from sets import Set
 f = codecs.open('xn_alkona_general_es-es.dsl', 'r', encoding='iso-8859-15')
-sust = Set() # for uniqueness
-adj = Set()
-verb = Set()
+sust = set() # for uniqueness
+adj = set()
+verb = set()
 current_word = ""
 
 for line in f:
   if line[0] != '\t':
-    current_word = line
-  if line[1:8] == '[m2][p]':
+    line = line.strip()
+    if line and ' ' not in line:
+      current_word = line
+  elif line[1:8] == '[m2][p]':
     if 'sust.' in line:
       sust.add(current_word)
     if 'verbo' in line:
@@ -19,15 +22,15 @@ for line in f:
 
 f.close()
       
-sust_file = codecs.open('sust.txt', 'w', 'utf-8')
+sust_file = codecs.open('words.N.txt', 'wb', 'utf-8')
 for w in sust:
-  sust_file.write(w)
+  sust_file.write(w + '\n')
 sust_file.close()
-verb_file = codecs.open('verb.txt', 'w', 'utf-8')
+verb_file = codecs.open('words.V.txt', 'wb', 'utf-8')
 for w in verb:
-  verb_file.write(w)
+  verb_file.write(w + '\n')
 verb_file.close()
-adj_file = codecs.open('adj.txt', 'w', 'utf-8')
+adj_file = codecs.open('words.A.txt', 'wb', 'utf-8')
 for w in adj:
-  adj_file.write(w)
+  adj_file.write(w + '\n')
 adj_file.close()
