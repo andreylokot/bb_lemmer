@@ -287,6 +287,8 @@ define ParticipioAgreement [ ?* [
 define Participio [ ?* ? "+Participio":0 ? ? ] .o. [ ParticipioIrregular .P. ParticipioRegular ] .o. ParticipioAgreement;
 
 source spanish.verbs.individual.foma
+source spanish.verbs.irregular.foma
 
-define VerbToForm [Verbs "+V":0 "+Infinitive":0] | IndividualVerbs .P. [
-    [ [Verbs .o. VerbToConjugation] "+V":0 ?* ] .o. [ [ ?* VerbTenses ] | Participio ]];
+define VerbToForm [[ Verbs "+V":0 "+Infinitive":0 ] | IndividualVerbs .P. [
+    [ [ Verbs .o. VerbToConjugation ] "+V":0 ?* ] .o. [
+    [ IrregularVerbsFix .o. [ ?* VerbTenses ] .o. IrregularPostprocess ] | Participio ]]];

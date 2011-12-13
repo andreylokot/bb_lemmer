@@ -1,0 +1,18 @@
+define IrregularVerbsGroup67 [ [[ ?* c:{zc} "+er" ] | [ ?* d u c:{zc} "+ir" ]] [
+    [ "+Indicativo" "+Presente" "+1" "+S" ] |
+    [ "+Subjuntivo" "+Presente" ? ? ] |
+    [ "+Imperativo" "+Afirmativo" [["+3" ? ] | ["+1" "+P"] ]] |
+    [ "+Imperativo" "+Negativo" ? ? ]
+]];
+
+define IrregularVerbsGroup7 [
+    [ ?* d u [c:j] "+ir" "+Indicativo" "+PreteritoIndefinido" ? ? ] |
+    [ ?* d u [c:[j "^"]] "+ir" "+Subjuntivo" [ "+PreteritoImperfecto1" | "+PreteritoImperfecto2" ] ? ? ]
+];
+
+define IrregularVerbsFix [[
+    IrregularVerbsGroup67
+|   IrregularVerbsGroup7
+] .P. ?* ];
+
+define IrregularPostprocess [[ "^" ? ] -> 0 ];
