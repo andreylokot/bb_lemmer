@@ -1,0 +1,1058 @@
+define IndividualVerbAndar {andar}:0 "+V":0 [
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {anduve} |
+        ["+2" "+S"] : {anduviste} |
+        ["+3" "+S"] : {anduvo} |
+        ["+1" "+P"] : {anduvimos} |
+        ["+2" "+P"] : {anduvisteis} |
+        ["+3" "+P"] : {anduvieron}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {anduviera} |
+        ["+2" "+S"] : {anduvieras} |
+        ["+3" "+S"] : {anduviera} |
+        ["+1" "+P"] : {anduviéramos} |
+        ["+2" "+P"] : {anduvierais} |
+        ["+3" "+P"] : {anduvieran}
+    ]]
+];
+
+define IndividualVerbCaber {caber}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {quepo} |
+        ["+2" "+S"] : {cabes} |
+        ["+3" "+S"] : {cabe} |
+        ["+1" "+P"] : {cabemos} |
+        ["+2" "+P"] : {cabéis} |
+        ["+3" "+P"] : {caben}
+    ]] |
+    [ "+Indicativo":0 "+FuturoImperfecto":0 [
+        ["+1" "+S"] : {cabré} |
+        ["+2" "+S"] : {cabrás} |
+        ["+3" "+S"] : {cabrá} |
+        ["+1" "+P"] : {cabremos} |
+        ["+2" "+P"] : {cabréis} |
+        ["+3" "+P"] : {cabrán}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {cupe} |
+        ["+2" "+S"] : {cupiste} |
+        ["+3" "+S"] : {cupo} |
+        ["+1" "+P"] : {cupimos} |
+        ["+2" "+P"] : {cupisteis} |
+        ["+3" "+P"] : {cupieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {quepa} |
+        ["+2" "+S"] : {quepas} |
+        ["+3" "+S"] : {quepa} |
+        ["+1" "+P"] : {quepamos} |
+        ["+2" "+P"] : {quepáis} |
+        ["+3" "+P"] : {quepan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {cupiera} |
+        ["+2" "+S"] : {cupieras} |
+        ["+3" "+S"] : {cupiera} |
+        ["+1" "+P"] : {cupiéramos} |
+        ["+2" "+P"] : {cupierais} |
+        ["+3" "+P"] : {cupieran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {cabe} |
+        ["+3" "+S"] : {quepa} |
+        ["+1" "+P"] : {quepamos} |
+        ["+2" "+P"] : {cabed} |
+        ["+3" "+P"] : {quepan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {quepas} |
+        ["+3" "+S"] : {quepa} |
+        ["+1" "+P"] : {quepamos} |
+        ["+2" "+P"] : {quepáis} |
+        ["+3" "+P"] : {quepan}
+    ]]
+];
+
+define IndividualVerbCaer {caer}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {caigo} |
+        ["+2" "+S"] : {caes} |
+        ["+3" "+S"] : {cae} |
+        ["+1" "+P"] : {caemos} |
+        ["+2" "+P"] : {caéis} |
+        ["+3" "+P"] : {caen}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {caí} |
+        ["+2" "+S"] : {caiste} |
+        ["+3" "+S"] : {cayó} |
+        ["+1" "+P"] : {caímos} |
+        ["+2" "+P"] : {caísteis} |
+        ["+3" "+P"] : {cayeron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {caiga} |
+        ["+2" "+S"] : {caigas} |
+        ["+3" "+S"] : {caiga} |
+        ["+1" "+P"] : {caigamos} |
+        ["+2" "+P"] : {caigáis} |
+        ["+3" "+P"] : {caigan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {cayera} |
+        ["+2" "+S"] : {cayeras} |
+        ["+3" "+S"] : {cayera} |
+        ["+1" "+P"] : {cayéramos} |
+        ["+2" "+P"] : {cayerais} |
+        ["+3" "+P"] : {cayeran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {cae} |
+        ["+3" "+S"] : {caiga} |
+        ["+1" "+P"] : {caigamos} |
+        ["+2" "+P"] : {caed} |
+        ["+3" "+P"] : {caigan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {caigas} |
+        ["+3" "+S"] : {caiga} |
+        ["+1" "+P"] : {caigamos} |
+        ["+2" "+P"] : {caigáis} |
+        ["+3" "+P"] : {caigan}
+    ]] |
+    [ "+Gerundio" : {cayendo} ]
+];
+
+define IndividualVerbDar {dar}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {doy} |
+        ["+2" "+S"] : {das} |
+        ["+3" "+S"] : {da} |
+        ["+1" "+P"] : {damos} |
+        ["+2" "+P"] : {dais} |
+        ["+3" "+P"] : {dan}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {di} |
+        ["+2" "+S"] : {diste} |
+        ["+3" "+S"] : {dio} |
+        ["+1" "+P"] : {dimos} |
+        ["+2" "+P"] : {disteis} |
+        ["+3" "+P"] : {dieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {dé} |
+        ["+2" "+S"] : {des} |
+        ["+3" "+S"] : {dé} |
+        ["+1" "+P"] : {demos} |
+        ["+2" "+P"] : {deis} |
+        ["+3" "+P"] : {den}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {diera} |
+        ["+2" "+S"] : {dieras} |
+        ["+3" "+S"] : {diera} |
+        ["+1" "+P"] : {dieramos} |
+        ["+2" "+P"] : {dierais} |
+        ["+3" "+P"] : {dieran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {da} |
+        ["+3" "+S"] : {dé} |
+        ["+1" "+P"] : {demos} |
+        ["+2" "+P"] : {dad} |
+        ["+3" "+P"] : {den}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {des} |
+        ["+3" "+S"] : {dé} |
+        ["+1" "+P"] : {demos} |
+        ["+2" "+P"] : {deis} |
+        ["+3" "+P"] : {den}
+    ]]
+];
+
+define IndividualVerbDecir {decir}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {digo} |
+        ["+2" "+S"] : {dices} |
+        ["+3" "+S"] : {dice} |
+        ["+1" "+P"] : {decimos} |
+        ["+2" "+P"] : {decís} |
+        ["+3" "+P"] : {dicen}
+    ]] |
+    [ "+Indicativo":0 "+FuturoImperfecto":0 [
+        ["+1" "+S"] : {diré} |
+        ["+2" "+S"] : {dirás} |
+        ["+3" "+S"] : {dirá} |
+        ["+1" "+P"] : {diremos} |
+        ["+2" "+P"] : {diréis} |
+        ["+3" "+P"] : {dirán}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {dije} |
+        ["+2" "+S"] : {dijiste} |
+        ["+3" "+S"] : {dijo} |
+        ["+1" "+P"] : {dijimos} |
+        ["+2" "+P"] : {dijisteis} |
+        ["+3" "+P"] : {dijeron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {diga} |
+        ["+2" "+S"] : {digas} |
+        ["+3" "+S"] : {diga} |
+        ["+1" "+P"] : {digamos} |
+        ["+2" "+P"] : {digáis} |
+        ["+3" "+P"] : {digan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {dijera} |
+        ["+2" "+S"] : {dijeras} |
+        ["+3" "+S"] : {dijera} |
+        ["+1" "+P"] : {dijéramos} |
+        ["+2" "+P"] : {dijerais} |
+        ["+3" "+P"] : {dijeran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {di} |
+        ["+3" "+S"] : {diga} |
+        ["+1" "+P"] : {digamos} |
+        ["+2" "+P"] : {decid} |
+        ["+3" "+P"] : {digan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {digas} |
+        ["+3" "+S"] : {diga} |
+        ["+1" "+P"] : {digamos} |
+        ["+2" "+P"] : {digáis} |
+        ["+3" "+P"] : {digan}
+    ]]
+];
+
+define IndividualVerbEstar {estar}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {estoy} |
+        ["+2" "+S"] : {estás} |
+        ["+3" "+S"] : {está} |
+        ["+1" "+P"] : {estamos} |
+        ["+2" "+P"] : {estáis} |
+        ["+3" "+P"] : {están}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {estuve} |
+        ["+2" "+S"] : {estuviste} |
+        ["+3" "+S"] : {estuvo} |
+        ["+1" "+P"] : {estuvimos} |
+        ["+2" "+P"] : {estuvisteis} |
+        ["+3" "+P"] : {estuvieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {esté} |
+        ["+2" "+S"] : {estés} |
+        ["+3" "+S"] : {esté} |
+        ["+1" "+P"] : {estemos} |
+        ["+2" "+P"] : {estéis} |
+        ["+3" "+P"] : {estén}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {estuviera} |
+        ["+2" "+S"] : {estuvieras} |
+        ["+3" "+S"] : {estuviera} |
+        ["+1" "+P"] : {estuviéramos} |
+        ["+2" "+P"] : {estuvierais} |
+        ["+3" "+P"] : {estuvieran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {está} |
+        ["+3" "+S"] : {esté} |
+        ["+1" "+P"] : {estemos} |
+        ["+2" "+P"] : {estad} |
+        ["+3" "+P"] : {estén}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {estés} |
+        ["+3" "+S"] : {esté} |
+        ["+1" "+P"] : {estemos} |
+        ["+2" "+P"] : {estéis} |
+        ["+3" "+P"] : {estén}
+    ]]
+];
+
+define IndividualVerbHaber {haber}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {he} |
+        ["+2" "+S"] : {has} |
+        ["+3" "+S"] : {ha} |
+        ["+1" "+P"] : {hemos} |
+        ["+2" "+P"] : {habéis} |
+        ["+3" "+P"] : {han}
+    ]] |
+    [ "+Indicativo":0 "+FuturoImperfecto":0 [
+        ["+1" "+S"] : {habré} |
+        ["+2" "+S"] : {habrás} |
+        ["+3" "+S"] : {habrá} |
+        ["+1" "+P"] : {habremos} |
+        ["+2" "+P"] : {habréis} |
+        ["+3" "+P"] : {habrán}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {hube} |
+        ["+2" "+S"] : {hubiste} |
+        ["+3" "+S"] : {hubo} |
+        ["+1" "+P"] : {hubimos} |
+        ["+2" "+P"] : {hubisteis} |
+        ["+3" "+P"] : {hubieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {haya} |
+        ["+2" "+S"] : {hayas} |
+        ["+3" "+S"] : {haya} |
+        ["+1" "+P"] : {hayamos} |
+        ["+2" "+P"] : {hayáis} |
+        ["+3" "+P"] : {hayan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {hubiera} |
+        ["+2" "+S"] : {hubieras} |
+        ["+3" "+S"] : {hubiera} |
+        ["+1" "+P"] : {hubiéramos} |
+        ["+2" "+P"] : {hubierais} |
+        ["+3" "+P"] : {hubieran}
+    ]]
+];
+
+define IndividualVerbHacer {hacer}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {hago} |
+        ["+2" "+S"] : {haces} |
+        ["+3" "+S"] : {hace} |
+        ["+1" "+P"] : {hacemos} |
+        ["+2" "+P"] : {hacéis} |
+        ["+3" "+P"] : {hacen}
+    ]] |
+    [ "+Indicativo":0 "+FuturoImperfecto":0 [
+        ["+1" "+S"] : {haré} |
+        ["+2" "+S"] : {harás} |
+        ["+3" "+S"] : {haré} |
+        ["+1" "+P"] : {haremos} |
+        ["+2" "+P"] : {haréis} |
+        ["+3" "+P"] : {harán}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {hice} |
+        ["+2" "+S"] : {hiciste} |
+        ["+3" "+S"] : {hizo} |
+        ["+1" "+P"] : {hicimos} |
+        ["+2" "+P"] : {hicisteis} |
+        ["+3" "+P"] : {hicieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {haga} |
+        ["+2" "+S"] : {hagas} |
+        ["+3" "+S"] : {haga} |
+        ["+1" "+P"] : {hagamos} |
+        ["+2" "+P"] : {hagáis} |
+        ["+3" "+P"] : {hagan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {hiciera} |
+        ["+2" "+S"] : {hicieras} |
+        ["+3" "+S"] : {hiciera} |
+        ["+1" "+P"] : {hiciéramos} |
+        ["+2" "+P"] : {hicierais} |
+        ["+3" "+P"] : {hicieran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {haz} |
+        ["+3" "+S"] : {haga} |
+        ["+1" "+P"] : {hagamos} |
+        ["+2" "+P"] : {haced} |
+        ["+3" "+P"] : {hagan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {hagas} |
+        ["+3" "+S"] : {haga} |
+        ["+1" "+P"] : {hagamos} |
+        ["+2" "+P"] : {hagáis} |
+        ["+3" "+P"] : {hagan}
+    ]]
+];
+
+define IndividualVerbIr {ir}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {voy} |
+        ["+2" "+S"] : {vas} |
+        ["+3" "+S"] : {va} |
+        ["+1" "+P"] : {vamos} |
+        ["+2" "+P"] : {vais} |
+        ["+3" "+P"] : {van}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoImperfecto":0 [
+        ["+1" "+S"] : {iba} |
+        ["+2" "+S"] : {ibas} |
+        ["+3" "+S"] : {iba} |
+        ["+1" "+P"] : {íbamos} |
+        ["+2" "+P"] : {ibais} |
+        ["+3" "+P"] : {iban}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {fui} |
+        ["+2" "+S"] : {fuiste} |
+        ["+3" "+S"] : {fue} |
+        ["+1" "+P"] : {fuimos} |
+        ["+2" "+P"] : {fuisteis} |
+        ["+3" "+P"] : {fueron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {vaya} |
+        ["+2" "+S"] : {vayas} |
+        ["+3" "+S"] : {vaya} |
+        ["+1" "+P"] : {vayamos} |
+        ["+2" "+P"] : {vayáis} |
+        ["+3" "+P"] : {vayan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {fuera} |
+        ["+2" "+S"] : {fueras} |
+        ["+3" "+S"] : {fuera} |
+        ["+1" "+P"] : {fuéramos} |
+        ["+2" "+P"] : {fuerais} |
+        ["+3" "+P"] : {fueran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {ve} |
+        ["+3" "+S"] : {vaya} |
+        ["+1" "+P"] : {vayamos} |
+        ["+2" "+P"] : {id} |
+        ["+3" "+P"] : {vayan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {vayas} |
+        ["+3" "+S"] : {vaya} |
+        ["+1" "+P"] : {vayamos} |
+        ["+2" "+P"] : {vayáis} |
+        ["+3" "+P"] : {vayan}
+    ]] |
+    [ "+Gerundio" : {yendo} ]
+];
+
+define IndividualVerbOir {oír}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {oigo} |
+        ["+2" "+S"] : {oyes} |
+        ["+3" "+S"] : {oye} |
+        ["+1" "+P"] : {oímos} |
+        ["+2" "+P"] : {oís} |
+        ["+3" "+P"] : {oyen}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {oí} |
+        ["+2" "+S"] : {oíste} |
+        ["+3" "+S"] : {oyó} |
+        ["+1" "+P"] : {oímos} |
+        ["+2" "+P"] : {oísteis} |
+        ["+3" "+P"] : {oyeron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {oiga} |
+        ["+2" "+S"] : {oigas} |
+        ["+3" "+S"] : {oiga} |
+        ["+1" "+P"] : {oigamos} |
+        ["+2" "+P"] : {oigáis} |
+        ["+3" "+P"] : {oigan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {oyera} |
+        ["+2" "+S"] : {oyeras} |
+        ["+3" "+S"] : {oyera} |
+        ["+1" "+P"] : {oyéramos} |
+        ["+2" "+P"] : {oyerais} |
+        ["+3" "+P"] : {oyeran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {oye} |
+        ["+3" "+S"] : {oiga} |
+        ["+1" "+P"] : {oigamos} |
+        ["+2" "+P"] : {oíd} |
+        ["+3" "+P"] : {oigan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {oigas} |
+        ["+3" "+S"] : {oiga} |
+        ["+1" "+P"] : {oigamos} |
+        ["+2" "+P"] : {oigáis} |
+        ["+3" "+P"] : {oigan}
+    ]]
+];
+
+define IndividualVerbPoder {poder}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {puedo} |
+        ["+2" "+S"] : {puedes} |
+        ["+3" "+S"] : {puede} |
+        ["+1" "+P"] : {podemos} |
+        ["+2" "+P"] : {podéis} |
+        ["+3" "+P"] : {pueden}
+    ]] |
+    [ "+Indicativo":0 "+FuturoImperfecto":0 [
+        ["+1" "+S"] : {podré} |
+        ["+2" "+S"] : {podrás} |
+        ["+3" "+S"] : {podrá} |
+        ["+1" "+P"] : {podremos} |
+        ["+2" "+P"] : {podréis} |
+        ["+3" "+P"] : {podrán}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {pude} |
+        ["+2" "+S"] : {pudiste} |
+        ["+3" "+S"] : {pudo} |
+        ["+1" "+P"] : {pudimos} |
+        ["+2" "+P"] : {pudisteis} |
+        ["+3" "+P"] : {pudieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {pueda} |
+        ["+2" "+S"] : {puedas} |
+        ["+3" "+S"] : {pueda} |
+        ["+1" "+P"] : {podamos} |
+        ["+2" "+P"] : {podáis} |
+        ["+3" "+P"] : {puedan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {pudiera} |
+        ["+2" "+S"] : {pudieras} |
+        ["+3" "+S"] : {pudiera} |
+        ["+1" "+P"] : {pudiéramos} |
+        ["+2" "+P"] : {pudierais} |
+        ["+3" "+P"] : {pudieran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {puede} |
+        ["+3" "+S"] : {pueda} |
+        ["+1" "+P"] : {podamos} |
+        ["+2" "+P"] : {poded} |
+        ["+3" "+P"] : {puedan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {puedas} |
+        ["+3" "+S"] : {pueda} |
+        ["+1" "+P"] : {podamos} |
+        ["+2" "+P"] : {podáis} |
+        ["+3" "+P"] : {puedan}
+    ]]
+];
+
+define IndividualVerbPoner {poner}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {pongo} |
+        ["+2" "+S"] : {pones} |
+        ["+3" "+S"] : {pone} |
+        ["+1" "+P"] : {ponemos} |
+        ["+2" "+P"] : {ponéis} |
+        ["+3" "+P"] : {ponen}
+    ]] |
+    [ "+Indicativo":0 "+FuturoImperfecto":0 [
+        ["+1" "+S"] : {pondré} |
+        ["+2" "+S"] : {pondrás} |
+        ["+3" "+S"] : {pondrá} |
+        ["+1" "+P"] : {pondremos} |
+        ["+2" "+P"] : {pondréis} |
+        ["+3" "+P"] : {pondrán}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {puse} |
+        ["+2" "+S"] : {pusiste} |
+        ["+3" "+S"] : {puso} |
+        ["+1" "+P"] : {pusimos} |
+        ["+2" "+P"] : {pusisteis} |
+        ["+3" "+P"] : {pusieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {ponga} |
+        ["+2" "+S"] : {pongas} |
+        ["+3" "+S"] : {ponga} |
+        ["+1" "+P"] : {pongamos} |
+        ["+2" "+P"] : {pongáis} |
+        ["+3" "+P"] : {pongan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {pusiera} |
+        ["+2" "+S"] : {pusieras} |
+        ["+3" "+S"] : {pusiera} |
+        ["+1" "+P"] : {pusiéramos} |
+        ["+2" "+P"] : {pusierais} |
+        ["+3" "+P"] : {pusieran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {pon} |
+        ["+3" "+S"] : {ponga} |
+        ["+1" "+P"] : {pongamos} |
+        ["+2" "+P"] : {poned} |
+        ["+3" "+P"] : {pongan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {pongas} |
+        ["+3" "+S"] : {ponga} |
+        ["+1" "+P"] : {pongamos} |
+        ["+2" "+P"] : {pongáis} |
+        ["+3" "+P"] : {pongan}
+    ]]
+];
+
+define IndividualVerbQuerer {querer}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {quiero} |
+        ["+2" "+S"] : {quieres} |
+        ["+3" "+S"] : {quiere} |
+        ["+1" "+P"] : {queremos} |
+        ["+2" "+P"] : {queréis} |
+        ["+3" "+P"] : {quieren}
+    ]] |
+    [ "+Indicativo":0 "+FuturoImperfecto":0 [
+        ["+1" "+S"] : {querré} |
+        ["+2" "+S"] : {querrás} |
+        ["+3" "+S"] : {querrá} |
+        ["+1" "+P"] : {querremos} |
+        ["+2" "+P"] : {querréis} |
+        ["+3" "+P"] : {querrán}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {quise} |
+        ["+2" "+S"] : {quisiste} |
+        ["+3" "+S"] : {quiso} |
+        ["+1" "+P"] : {quisimos} |
+        ["+2" "+P"] : {quisisteis} |
+        ["+3" "+P"] : {quisieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {quiera} |
+        ["+2" "+S"] : {quieras} |
+        ["+3" "+S"] : {quiera} |
+        ["+1" "+P"] : {queramos} |
+        ["+2" "+P"] : {queráis} |
+        ["+3" "+P"] : {quieran}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {quisiera} |
+        ["+2" "+S"] : {quisieras} |
+        ["+3" "+S"] : {quisiera} |
+        ["+1" "+P"] : {quisiéramos} |
+        ["+2" "+P"] : {quisierais} |
+        ["+3" "+P"] : {quisieran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {quiere} |
+        ["+3" "+S"] : {quiera} |
+        ["+1" "+P"] : {queramos} |
+        ["+2" "+P"] : {quered} |
+        ["+3" "+P"] : {quieran}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {quieras} |
+        ["+3" "+S"] : {quiera} |
+        ["+1" "+P"] : {queramos} |
+        ["+2" "+P"] : {queráis} |
+        ["+3" "+P"] : {quieran}
+    ]]
+];
+
+define IndividualVerbSaber {saber}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {sé} |
+        ["+2" "+S"] : {sabes} |
+        ["+3" "+S"] : {sabe} |
+        ["+1" "+P"] : {sabemos} |
+        ["+2" "+P"] : {sabéis} |
+        ["+3" "+P"] : {saben}
+    ]] |
+    [ "+Indicativo":0 "+FuturoImperfecto":0 [
+        ["+1" "+S"] : {sabré} |
+        ["+2" "+S"] : {sabrás} |
+        ["+3" "+S"] : {sabrá} |
+        ["+1" "+P"] : {sabremos} |
+        ["+2" "+P"] : {sabréis} |
+        ["+3" "+P"] : {sabrán}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {supe} |
+        ["+2" "+S"] : {supiste} |
+        ["+3" "+S"] : {supo} |
+        ["+1" "+P"] : {supimos} |
+        ["+2" "+P"] : {supisteis} |
+        ["+3" "+P"] : {supieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {sepa} |
+        ["+2" "+S"] : {sepas} |
+        ["+3" "+S"] : {sepa} |
+        ["+1" "+P"] : {sepamos} |
+        ["+2" "+P"] : {sepáis} |
+        ["+3" "+P"] : {sepan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {supiera} |
+        ["+2" "+S"] : {supieras} |
+        ["+3" "+S"] : {supiera} |
+        ["+1" "+P"] : {supiéramos} |
+        ["+2" "+P"] : {supierais} |
+        ["+3" "+P"] : {supieran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {sabe} |
+        ["+3" "+S"] : {sepa} |
+        ["+1" "+P"] : {sepamos} |
+        ["+2" "+P"] : {sabed} |
+        ["+3" "+P"] : {sepan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {sepas} |
+        ["+3" "+S"] : {sepa} |
+        ["+1" "+P"] : {sepamos} |
+        ["+2" "+P"] : {sepáis} |
+        ["+3" "+P"] : {sepan}
+    ]]
+];
+
+define IndividualVerbSalir {salir}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {salgo} |
+        ["+2" "+S"] : {sales} |
+        ["+3" "+S"] : {sale} |
+        ["+1" "+P"] : {salimos} |
+        ["+2" "+P"] : {salís} |
+        ["+3" "+P"] : {salen}
+    ]] |
+    [ "+Indicativo":0 "+FuturoImperfecto":0 [
+        ["+1" "+S"] : {saldré} |
+        ["+2" "+S"] : {saldrás} |
+        ["+3" "+S"] : {saldrá} |
+        ["+1" "+P"] : {saldremos} |
+        ["+2" "+P"] : {saldréis} |
+        ["+3" "+P"] : {saldrán}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {salga} |
+        ["+2" "+S"] : {salgas} |
+        ["+3" "+S"] : {salga} |
+        ["+1" "+P"] : {salgamos} |
+        ["+2" "+P"] : {salgáis} |
+        ["+3" "+P"] : {salgan}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {sal} |
+        ["+3" "+S"] : {salga} |
+        ["+1" "+P"] : {salgamos} |
+        ["+2" "+P"] : {salid} |
+        ["+3" "+P"] : {salgan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {salgas} |
+        ["+3" "+S"] : {salga} |
+        ["+1" "+P"] : {salgamos} |
+        ["+2" "+P"] : {salgáis} |
+        ["+3" "+P"] : {salgan}
+    ]]
+];
+
+define IndividualVerbSer {ser}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {soy} |
+        ["+2" "+S"] : {eres} |
+        ["+3" "+S"] : {es} |
+        ["+1" "+P"] : {somos} |
+        ["+2" "+P"] : {sois} |
+        ["+3" "+P"] : {son}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoImperfecto":0 [
+        ["+1" "+S"] : {era} |
+        ["+2" "+S"] : {eras} |
+        ["+3" "+S"] : {era} |
+        ["+1" "+P"] : {éramos} |
+        ["+2" "+P"] : {erais} |
+        ["+3" "+P"] : {eran}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {fui} |
+        ["+2" "+S"] : {fuiste} |
+        ["+3" "+S"] : {fue} |
+        ["+1" "+P"] : {fuimos} |
+        ["+2" "+P"] : {fuisteis} |
+        ["+3" "+P"] : {fueron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {sea} |
+        ["+2" "+S"] : {seas} |
+        ["+3" "+S"] : {sea} |
+        ["+1" "+P"] : {seamos} |
+        ["+2" "+P"] : {seáis} |
+        ["+3" "+P"] : {sean}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {fuera} |
+        ["+2" "+S"] : {fueras} |
+        ["+3" "+S"] : {fuera} |
+        ["+1" "+P"] : {fuéramos} |
+        ["+2" "+P"] : {fuerais} |
+        ["+3" "+P"] : {fueran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {sé} |
+        ["+3" "+S"] : {sea} |
+        ["+1" "+P"] : {seamos} |
+        ["+2" "+P"] : {sed} |
+        ["+3" "+P"] : {sean}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {seas} |
+        ["+3" "+S"] : {sea} |
+        ["+1" "+P"] : {seamos} |
+        ["+2" "+P"] : {seáis} |
+        ["+3" "+P"] : {sean}
+    ]]
+];
+
+define IndividualVerbTener {tener}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {tengo} |
+        ["+2" "+S"] : {tienes} |
+        ["+3" "+S"] : {tiene} |
+        ["+1" "+P"] : {tenemos} |
+        ["+2" "+P"] : {tenéis} |
+        ["+3" "+P"] : {tienen}
+    ]] |
+    [ "+Indicativo":0 "+FuturoImperfecto":0 [
+        ["+1" "+S"] : {tendré} |
+        ["+2" "+S"] : {tendrás} |
+        ["+3" "+S"] : {tendrá} |
+        ["+1" "+P"] : {tendremos} |
+        ["+2" "+P"] : {tendréis} |
+        ["+3" "+P"] : {tendrán}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {tuve} |
+        ["+2" "+S"] : {tuviste} |
+        ["+3" "+S"] : {tuvo} |
+        ["+1" "+P"] : {tuvimos} |
+        ["+2" "+P"] : {tuvisteis} |
+        ["+3" "+P"] : {tuvieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {tenga} |
+        ["+2" "+S"] : {tengas} |
+        ["+3" "+S"] : {tenga} |
+        ["+1" "+P"] : {tengamos} |
+        ["+2" "+P"] : {tengáis} |
+        ["+3" "+P"] : {tengan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {tuviera} |
+        ["+2" "+S"] : {tuvieras} |
+        ["+3" "+S"] : {tuviera} |
+        ["+1" "+P"] : {tuviéramos} |
+        ["+2" "+P"] : {tuvierais} |
+        ["+3" "+P"] : {tuvieran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {ten} |
+        ["+3" "+S"] : {tenga} |
+        ["+1" "+P"] : {tengamos} |
+        ["+2" "+P"] : {tened} |
+        ["+3" "+P"] : {tengan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {tengas} |
+        ["+3" "+S"] : {tenga} |
+        ["+1" "+P"] : {tengamos} |
+        ["+2" "+P"] : {tengáis} |
+        ["+3" "+P"] : {tengan}
+    ]]
+];
+
+define IndividualVerbTraer {traer}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {traigo} |
+        ["+2" "+S"] : {traes} |
+        ["+3" "+S"] : {trae} |
+        ["+1" "+P"] : {traemos} |
+        ["+2" "+P"] : {traéis} |
+        ["+3" "+P"] : {traen}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {traje} |
+        ["+2" "+S"] : {trajiste} |
+        ["+3" "+S"] : {trajo} |
+        ["+1" "+P"] : {trajimos} |
+        ["+2" "+P"] : {trajisteis} |
+        ["+3" "+P"] : {trajeron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {traiga} |
+        ["+2" "+S"] : {traigas} |
+        ["+3" "+S"] : {traiga} |
+        ["+1" "+P"] : {traigamos} |
+        ["+2" "+P"] : {traigáis} |
+        ["+3" "+P"] : {traigan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {trajera} |
+        ["+2" "+S"] : {trajeras} |
+        ["+3" "+S"] : {trajera} |
+        ["+1" "+P"] : {trajéramos} |
+        ["+2" "+P"] : {trajerais} |
+        ["+3" "+P"] : {trajeran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {trae} |
+        ["+3" "+S"] : {traiga} |
+        ["+1" "+P"] : {traigamos} |
+        ["+2" "+P"] : {traed} |
+        ["+3" "+P"] : {traigan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {traigas} |
+        ["+3" "+S"] : {traiga} |
+        ["+1" "+P"] : {traigamos} |
+        ["+2" "+P"] : {traigáis} |
+        ["+3" "+P"] : {traigan}
+    ]] |
+    [ "+Gerundio" : {trayendo} ]
+];
+
+define IndividualVerbVenir {venir}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {vengo} |
+        ["+2" "+S"] : {vienes} |
+        ["+3" "+S"] : {viene} |
+        ["+1" "+P"] : {venimos} |
+        ["+2" "+P"] : {venís} |
+        ["+3" "+P"] : {vienen}
+    ]] |
+    [ "+Indicativo":0 "+FuturoImperfecto":0 [
+        ["+1" "+S"] : {vendré} |
+        ["+2" "+S"] : {vendrás} |
+        ["+3" "+S"] : {vendrá} |
+        ["+1" "+P"] : {vendremos} |
+        ["+2" "+P"] : {vendréis} |
+        ["+3" "+P"] : {vendrán}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {vine} |
+        ["+2" "+S"] : {viniste} |
+        ["+3" "+S"] : {vino} |
+        ["+1" "+P"] : {vinimos} |
+        ["+2" "+P"] : {vinisteis} |
+        ["+3" "+P"] : {vinieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {venga} |
+        ["+2" "+S"] : {vengas} |
+        ["+3" "+S"] : {venga} |
+        ["+1" "+P"] : {vengamos} |
+        ["+2" "+P"] : {vengáis} |
+        ["+3" "+P"] : {vengan}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {viniera} |
+        ["+2" "+S"] : {vinieras} |
+        ["+3" "+S"] : {viniera} |
+        ["+1" "+P"] : {viniéramos} |
+        ["+2" "+P"] : {vinierais} |
+        ["+3" "+P"] : {vinieran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {ven} |
+        ["+3" "+S"] : {venga} |
+        ["+1" "+P"] : {vengamos} |
+        ["+2" "+P"] : {venid} |
+        ["+3" "+P"] : {vengan}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {vengas} |
+        ["+3" "+S"] : {venga} |
+        ["+1" "+P"] : {vengamos} |
+        ["+2" "+P"] : {vengáis} |
+        ["+3" "+P"] : {vengan}
+    ]]
+];
+
+define IndividualVerbVer {ver}:0 "+V":0 [
+    [ "+Indicativo":0 "+Presente":0 [
+        ["+1" "+S"] : {veo} |
+        ["+2" "+S"] : {ves} |
+        ["+3" "+S"] : {ve} |
+        ["+1" "+P"] : {vemos} |
+        ["+2" "+P"] : {veis} |
+        ["+3" "+P"] : {ven}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoImperfecto":0 [
+        ["+1" "+S"] : {veía} |
+        ["+2" "+S"] : {veías} |
+        ["+3" "+S"] : {veía} |
+        ["+1" "+P"] : {veíamos} |
+        ["+2" "+P"] : {veíais} |
+        ["+3" "+P"] : {veían}
+    ]] |
+    [ "+Indicativo":0 "+PreteritoIndefinido":0 [
+        ["+1" "+S"] : {vi} |
+        ["+2" "+S"] : {viste} |
+        ["+3" "+S"] : {vio} |
+        ["+1" "+P"] : {vimos} |
+        ["+2" "+P"] : {visteis} |
+        ["+3" "+P"] : {vieron}
+    ]] |
+    [ "+Subjuntivo":0 "+Presente":0 [
+        ["+1" "+S"] : {vea} |
+        ["+2" "+S"] : {veas} |
+        ["+3" "+S"] : {vea} |
+        ["+1" "+P"] : {veamos} |
+        ["+2" "+P"] : {veáis} |
+        ["+3" "+P"] : {vean}
+    ]] |
+    [ "+Subjuntivo":0 "+PreteritoImperfecto1":0 [
+        ["+1" "+S"] : {viera} |
+        ["+2" "+S"] : {vieras} |
+        ["+3" "+S"] : {viera} |
+        ["+1" "+P"] : {viéramos} |
+        ["+2" "+P"] : {vierais} |
+        ["+3" "+P"] : {vieran}
+    ]] |
+    [ "+Imperativo":0 "+Afirmativo":0 [
+        ["+2" "+S"] : {ve} |
+        ["+3" "+S"] : {vea} |
+        ["+1" "+P"] : {veamos} |
+        ["+2" "+P"] : {ved} |
+        ["+3" "+P"] : {vean}
+    ]] |
+    [ "+Imperativo":0 "+Negativo":0 [
+        ["+2" "+S"] : {veas} |
+        ["+3" "+S"] : {vea} |
+        ["+1" "+P"] : {veamos} |
+        ["+2" "+P"] : {veáis} |
+        ["+3" "+P"] : {vean}
+    ]] |
+    [ "+Gerundio" : {viendo} ]
+];
+
+define IndividualVerbs [
+    IndividualVerbAndar
+|   IndividualVerbCaber
+|   IndividualVerbCaer
+|   IndividualVerbDar
+|   IndividualVerbDecir
+|   IndividualVerbEstar
+|   IndividualVerbHaber
+|   IndividualVerbHacer
+|   IndividualVerbIr
+|   IndividualVerbOir
+|   IndividualVerbPoder
+|   IndividualVerbPoner
+|   IndividualVerbQuerer
+|   IndividualVerbSaber
+|   IndividualVerbSalir
+|   IndividualVerbSer
+|   IndividualVerbTener
+|   IndividualVerbTraer
+|   IndividualVerbVenir
+|   IndividualVerbVer
+];

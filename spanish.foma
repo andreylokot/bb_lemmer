@@ -1,0 +1,12 @@
+define Verbs @txt"words.V.txt";
+define Nouns @txt"words.N.txt";
+define Adjectives @txt"words.A.txt";
+
+source spanish.verbs.foma
+source spanish.nouns.foma
+source spanish.adjectives.foma
+
+define Main [ VerbToForm | NounToForm | AdjectiveToForm ];
+
+regex Main;
+

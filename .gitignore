@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+words.?.txt
+spanish.save
+result.txt
+result.debug.txt
+result.send.txt
