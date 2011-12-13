@@ -269,8 +269,10 @@ define ParticipioIrregular [ ?* [
     [{mor} "+ir"] : {muert} |
     [{pon} "+er"] : {puest} |
     [{resolv} "+er"] : {resuelt} |
-    [{v} "+er"] : {vist} |
     [{volv} "+r"] : {vuelt}
+] ? ? ] | [ [
+    ["+ir"] : {id} |
+    [{v} "+er"] : {vist}
 ] ? ? ];
 
 define ParticipioRegular [ ?* [ "+ar" : {ad} | ["+er" | "+ir"] : {id} ] ? ? ];
@@ -284,5 +286,7 @@ define ParticipioAgreement [ ?* [
 
 define Participio [ ?* ? "+Participio":0 ? ? ] .o. [ ParticipioIrregular .P. ParticipioRegular ] .o. ParticipioAgreement;
 
-define VerbToForm [Verbs "+V":0 "+Infinitive":0] | [
+source spanish.verbs.individual.foma
+
+define VerbToForm [Verbs "+V":0 "+Infinitive":0] | IndividualVerbs .P. [
     [ [Verbs .o. VerbToConjugation] "+V":0 ?* ] .o. [ [ ?* VerbTenses ] | Participio ]];
