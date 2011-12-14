@@ -23,16 +23,16 @@ for line in f:
       adj.add(current_word)
 
 f.close()
-      
+
 sust_file = codecs.open('words.N.txt', 'wb', 'utf-8')
-for w in sust:
+for w in sorted(list(sust)):
   sust_file.write(w + '\n')
 sust_file.close()
 verb_file = codecs.open('words.V.txt', 'wb', 'utf-8')
-for w in verb:
+for w in sorted(list(verb)):
   verb_file.write(w + '\n')
 verb_file.close()
 adj_file = codecs.open('words.A.txt', 'wb', 'utf-8')
-for w in adj:
+for w in sorted(list(adj)):
   adj_file.write(w + '\n')
 adj_file.close()
