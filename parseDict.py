@@ -16,6 +16,8 @@ for line in f:
     if 'sust.' in line:
       sust.add(current_word)
     if 'verbo' in line:
+      if current_word.endswith('se'):
+        current_word = current_word[:-2]
       verb.add(current_word)
     if 'adj.' in line:
       adj.add(current_word)
