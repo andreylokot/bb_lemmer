@@ -1,2 +1,8 @@
-# stub
-define NounToForm [ Nouns "+N":0 ];
+define NounToFeminine [ Letter* [{or}|{tor}|{dor}|{ión}|{al}] "+F":a ? ];
+
+define NounToPlural [[ ?* "+S":0 ] | [
+    [ ?* [ a | e | i | o | u | é ] "+P":s ] .P.
+    [ ?* ([z | x]:c | c:{qu} ) "+P":{es} ]
+]] .P. [ ?* "+P":s "+IrregularPluralNoun":0 ];
+
+define NounToForm [ Nouns "+N":0 (\Letter)* ] .o. [ NounToFeminine .P. ?* ] .o. NounToPlural;
