@@ -10,7 +10,10 @@ source spanish.verbs.foma
 source spanish.nouns.foma
 source spanish.adjectives.foma
 
-define Main [ VerbToForm | NounToForm | AdjectiveToForm ];
+define MainFromDict [ VerbToForm | NounToForm | AdjectiveToForm ];
+
+define Prefix [ {ab} | {abs} | {ante} | {anti} | {auto} | {bi} | {bis} | {biz} | {cent} | {contra} | {co} | {con} | {de] | {des} | {di} | {dis} | {entre} | {ex} | {homo} | {i} | {im} | {in} | {inter} | {mal} | {mono} | {para} | {poli} | {pos} | {post} | {pre} | {pro} | {re} | {semi} | {seudo} | {so} | {sobre} | {sub} | {super} | {tele} | {uni} ];
+define Main [ MainFromDict .P. [ Prefix MainFromDict ]];
 
 regex Main;
 
