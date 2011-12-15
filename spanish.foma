@@ -2,7 +2,7 @@ define Vowel [ a | e | i | o | u | á | é | í | ó | ú | ü ];
 define Consonant [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | t | v | w | x | y | z | ñ ];
 define Letter [ Vowel | Consonant ];
 
-define Verbs @txt"words.V.txt";
+define Verbs [ [@txt"words.V.txt"] | [@txt"words.V.test.txt"] ];
 define Nouns @txt"words.N.txt";
 define Adjectives @txt"words.A.txt";
 

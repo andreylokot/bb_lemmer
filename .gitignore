@@ -1,6 +1,9 @@
 *.pyc
 *.pyo
-words.?.txt
+words.V.txt
+words.V.test.txt
+words.N.txt
+words.A.txt
 spanish.save
 result.txt
 result.debug.txt
