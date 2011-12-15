@@ -1,2 +1,11 @@
-# stub
-define AdjectiveToForm [ Adjectives "+A":0 ];
+define AdjectiveGender [
+    [ ?* o "+M":0 ? ] |
+    [ ?* o:a "+F":0 ? ]
+] .P. [ ?+ ["+M" | "+F"]:0 ? ];
+
+define AdjectiveNumber [[ ?+ "+S":0 ] |
+    [ ?* [ a | e | i | o | u | é ] "+P":s ] .P.
+    [ [ z -> c || _ .#. ] "+P":{es} ]
+];
+
+define AdjectiveToForm [ Adjectives "+A":0 ? ? ] .o. AdjectiveGender .o. AdjectiveNumber;
