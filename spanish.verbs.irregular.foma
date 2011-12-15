@@ -1,3 +1,13 @@
+define IrregularVerbsGroup1 [ Letter* e:{ie} Consonant+ ? "+IrregularVerbsGroup1Fix":0
+    [[[ "+Indicativo" | "+Subjuntivo" ] "+Presente" ] | [ "+Imperativo" ? ] ]
+    [[? "+S"] | ["+3" "+P"]]
+];
+
+define IrregularVerbsGroup2 [ Letter* o:{ue} Consonant+ ? "+IrregularVerbsGroup2Fix":0
+    [[[ "+Indicativo" | "+Subjuntivo" ] "+Presente" ] | [ "+Imperativo" ? ] ]
+    [[? "+S"] | ["+3" "+P"]]
+];
+
 define IrregularVerbsGroup67 [ [[ ?* c:{zc} "+er" ] | [ ?* d u c:{zc} "+ir" ]] [
     [ "+Indicativo" "+Presente" "+1" "+S" ] |
     [ "+Subjuntivo" "+Presente" ? ? ] |
@@ -6,13 +16,35 @@ define IrregularVerbsGroup67 [ [[ ?* c:{zc} "+er" ] | [ ?* d u c:{zc} "+ir" ]] [
 ]];
 
 define IrregularVerbsGroup7 [
-    [ ?* d u [c:j] "+ir" "+Indicativo" "+PreteritoIndefinido" ? ? ] |
+    [ ?* d u [c:j] "+ir" "+Indicativo" "+PreteritoIndefinido" [ ["+1" "+P"] | ["+2" ?] ] ] |
+    [ ?* d u [c:[{je} "^"]] "+ir" "+Indicativo" "+PreteritoIndefinido" ["+1" "+S"] ] |
+    [ ?* d u [c:[{jo} "^2"]] "+ir" "+Indicativo" "+PreteritoIndefinido" ["+3" "+S"] ] |
+    [ ?* d u [c:[j "^"]] "+ir" "+Indicativo" "+PreteritoIndefinido" ["+3" "+P"] ] |
     [ ?* d u [c:[j "^"]] "+ir" "+Subjuntivo" [ "+PreteritoImperfecto1" | "+PreteritoImperfecto2" ] ? ? ]
+];
+
+define IrregularVerbsGroup8 [ ?* u 0:"+IrregularVerbsGroup7Postprocess" "+ir" [[[
+    [ "+Indicativo" [ "+Presente" | "+PreteritoIndefinido" ] ] |
+    [ "+Subjuntivo" [ "+Presente" | "+PreteritoImperfecto1" | "+PreteritoImperfecto2" ] ] |
+    [ "+Imperativo" ? ]
+] ? ?] | "+Gerundio" ]];
+
+define IrregularVerbsGroup8Postprocess [
+    [ [["+IrregularVerbsGroup7Postprocess" {ie}] -> {ye} ] ] .o.
+    [ ["+IrregularVerbsGroup7Postprocess" -> y || _ [ a | e | o | á | é | ó ] ] ] .o.
+    [ "+IrregularVerbsGroup7Postprocess" -> 0]
 ];
 
 define IrregularVerbsFix [[
     IrregularVerbsGroup67
 |   IrregularVerbsGroup7
-] .P. ?* ];
+|   IrregularVerbsGroup8
+] .P. [
+    IrregularVerbsGroup1
+|   IrregularVerbsGroup2
+].P. ?* ];
 
-define IrregularPostprocess [[ "^" ? ] -> 0 ];
+define IrregularPostprocess [
+    [[ "^" Letter ] -> 0 ] .o. [[ "^2" Letter Letter ] -> 0 ]
+    .o. IrregularVerbsGroup8Postprocess
+];
