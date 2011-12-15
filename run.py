@@ -11,15 +11,15 @@ def clear_debug(result):
 
 def main():
     try:
-        os.unlink('results.txt')
+        os.unlink('result.txt')
     except OSError:
         pass
     try:
-        os.unlink('results.debug.txt')
+        os.unlink('result.debug.txt')
     except OSError:
         pass
     try:
-        os.unlink('results.send.txt')
+        os.unlink('result.send.txt')
     except OSError:
         pass
 
